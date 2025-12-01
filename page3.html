@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deja Brew Food Menu</title>
+
+    <link rel="stylesheet" href="food.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #512507;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/background.jpg');
+        }
+
+        .menu-wrapper {
+            width: 95%;
+            margin: 20px auto;
+            display: flex;
+            gap: 25px;
+            height: 100vh;
+        }
+
+        .image-section {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .menu-img {
+            width: 100%;
+            height: 23%;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.2);
+        }
+
+        .menu-section {
+            width: 60%;
+            background: #fffdf7; 
+            padding: 25px;
+            border-radius: 20px;
+            overflow-y: auto;
+            box-shadow: 0 0 12px rgba(0,0,0,0.3);
+        }
+
+        .category-box {
+            border: 2px solid #b8860b;
+            padding: 18px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            transition: 0.3s;
+        }
+
+        .category-box:hover {
+            transform: scale(1.03);
+            background: #fff4df;
+            box-shadow: 0 0 12px rgba(255,180,50,0.6);
+        }
+
+        h2 {
+            color: #b5651d;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #d19a5c;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            font-size: 18px;
+        }
+
+        .fade-in {
+            animation: fade 1s ease-in-out forwards;
+        }
+
+        @keyframes fade {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .menu-wrapper {
+                flex-direction: column;
+                height: auto;
+            }
+            .image-section {
+                width: 100%;
+            }
+            .menu-section {
+                width: 100%;
+            }
+            .menu-img {
+                height: 200px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align:center; color:#ca9671; font-family:Georgia, serif; margin-top:10px;">
+        Deja Brew Eatery
+    </h1>
+
+    <div class="menu-wrapper">
+
+        <div class="image-section fade-in">
+            <img src="images/cinnamon.jpg" class="menu-img">
+            <img src="images/avocado.jpg" class="menu-img">
+            <img src="images/club.jpg" class="menu-img">
+            <img src="images/beef.jpg" class="menu-img">
+        </div>
+
+        <div class="menu-section fade-in">
+
+            <div class="category-box">
+                <h2>Pastries</h2>
+                <div class="item"><span>Brownies</span><span>₱50</span></div>
+                <div class="item"><span>Croissant</span><span>₱80</span></div>
+                <div class="item"><span>Banana Bread</span><span>₱100</span></div>
+                <div class="item"><span>Blueberry Muffins</span><span>₱100</span></div>
+                <div class="item"><span>Cinnamon Rolls</span><span>₱110</span></div>
+            </div>
+
+            <div class="category-box">
+                <h2>Toasts</h2>
+                <div class="item"><span>Buttered Toast</span><span>₱50</span></div>
+                <div class="item"><span>French Toast</span><span>₱50</span></div>
+                <div class="item"><span>Garlic Toast</span><span>₱60</span></div>
+                <div class="item"><span>Avocado Toast</span><span>₱80</span></div>
+            </div>
+
+            <div class="category-box">
+                <h2>Sandwiches & Light Meals</h2>
+                <div class="item"><span>Grilled Cheese</span><span>₱80</span></div>
+                <div class="item"><span>Ham and Cheese</span><span>₱100</span></div>
+                <div class="item"><span>Tuna Sandwich</span><span>₱110</span></div>
+                <div class="item"><span>Chicken Sandwich</span><span>₱115</span></div>
+                <div class="item"><span>Club Sandwich</span><span>₱180</span></div>
+            </div>
+
+            <div class="category-box">
+                <h2>Pasta & Rice Meals</h2>
+                <div class="item"><span>Spaghetti Pasta</span><span>₱195</span></div>
+                <div class="item"><span>Carbonara Pasta</span><span>₱195</span></div>
+                <div class="item"><span>Lasagna Pasta</span><span>₱200</span></div>
+                <div class="item"><span>Pesto Pasta</span><span>₱200</span></div>
+                <div class="item"><span>Chicken Teriyaki Rice</span><span>₱200</span></div>
+                <div class="item"><span>Beef Steak Rice</span><span>₱200</span></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

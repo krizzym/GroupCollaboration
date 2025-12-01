@@ -1,0 +1,17 @@
+h1 {
+    letter-spacing: 1px;
+    font-size: 32px;
+}
+
+.item span {
+    color: #5a4630;
+}
+
+.menu-img {
+    transition: 0.3s;
+}
+
+.menu-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255,180,80,0.8);
+}
