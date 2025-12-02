@@ -8,6 +8,12 @@
 </head>
 
 <body>
+    <div class="nav">
+    <a href="page1.html">Home</a>
+    <a href="page2.html">Coffee Menu</a>
+    <a href="page3.html">Food Menu</a>
+    </div>
+
 
     <div class="title-container">
         <h1 id="cafe-title">Deja Brew</h1>
@@ -71,8 +77,29 @@
             text-align: right;
             line-height: 1.4;
         }
+        .nav {
+            background: rgba(0,0,0,0.6);
+            padding: 12px 20px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+        }
 
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
 
+.nav a:hover {
+    color: #ffd9a3;
+}
         @media (max-width: 768px) {
             #cafe-title {
                 font-size: 3.5rem;
