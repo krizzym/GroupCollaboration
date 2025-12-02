@@ -9,11 +9,13 @@
 
     <style>
         body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #512507;
+            font-family: "Georgia", serif;
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-position: center;
             margin: 0;
             padding: 0;
-            background-image: url('images/background.jpg');
+            padding-top: 80px;
         }
 
         .menu-wrapper {
@@ -46,6 +48,7 @@
             border-radius: 20px;
             overflow-y: auto;
             box-shadow: 0 0 12px rgba(0,0,0,0.3);
+            font-size: 20px;
         }
 
         .category-box {
@@ -62,18 +65,29 @@
             box-shadow: 0 0 12px rgba(255,180,50,0.6);
         }
 
+        h1 {
+            text-align:center; 
+            color:#ca9671; 
+            font-family: Georgia, serif; 
+            margin-top:10px;
+            font-size: 50px;     
+            letter-spacing: 3px;
+        }
+
         h2 {
             color: #b5651d;
             margin-bottom: 12px;
             padding-bottom: 8px;
             border-bottom: 2px solid #d19a5c;
+            font-family: "Georgia", serif;
+            font-size: 28px; 
         }
 
         .item {
             display: flex;
             justify-content: space-between;
             padding: 6px 0;
-            font-size: 18px;
+            font-size: 20px; 
         }
 
         .fade-in {
@@ -90,9 +104,7 @@
                 flex-direction: column;
                 height: auto;
             }
-            .image-section {
-                width: 100%;
-            }
+            .image-section,
             .menu-section {
                 width: 100%;
             }
@@ -101,13 +113,43 @@
             }
         }
 
+        .nav {
+            background: rgba(0,0,0,0.6);
+            padding: 12px 20px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: "Georgia", serif;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            color: #ffd9a3;
+        }
+
     </style>
 </head>
+
 <body>
 
-    <h1 style="text-align:center; color:#ca9671; font-family:Georgia, serif; margin-top:10px;">
-        Deja Brew Eatery
-    </h1>
+    <div class="nav">
+        <a href="page1.html">Home</a>
+        <a href="page2.html">Coffee Menu</a>
+        <a href="page3.html">Food Menu</a>
+    </div>
+
+    <h1>Deja Brew Eatery</h1>
 
     <div class="menu-wrapper">
 
